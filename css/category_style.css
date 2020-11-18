@@ -372,6 +372,14 @@ main {
   align-items: center;
 }
 
+#chapters {
+  display: grid;
+  width: 100%;
+  margin: 6vh auto;
+  grid-template-columns: 1fr 2fr 2fr 1fr;
+  grid-template-rows: repeat(11, 1fr);
+}
+
 .btn-dark {
   display: inline-block;
   border-radius: 100vw;

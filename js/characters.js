@@ -64,6 +64,10 @@ class CharacterView {
   constructor() {
     this.container = document.getElementById("btn-container");
     this.recordPerPage = 20; // 5x4
+    console.log("window.innerWidth :>> ", window.innerWidth);
+    if (window.innerWidth < 1250) {
+      this.recordPerPage = 10;
+    }
   }
 
   buttonAction = (event) => {

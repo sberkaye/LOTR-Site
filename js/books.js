@@ -90,7 +90,7 @@ class BookView {
       y++;
     });
 
-    infoBox.innerHTML += `<div id="chapters" style="display: grid; width: 100%; margin: 6vh auto; grid-template-columns: 1fr 2fr 2fr 1fr; grid-template-rows: repeat(11, 1fr);">${chapterNames}</div>`;
+    infoBox.innerHTML += `<div id="chapters">${chapterNames}</div>`;
     document.getElementById("chapters").style.display = "grid";
     const transitionGradient = document.getElementById("transition-gradient");
     transitionGradient.style.opacity = 1;

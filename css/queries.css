@@ -1,0 +1,78 @@
+@media only screen and (max-width: 1250px) {
+  body {
+    background: blue;
+  }
+  #bg-wrapper {
+    display: none;
+  }
+  #ic-span,
+  #span-play {
+    display: none;
+  }
+  .btn-container,
+  #btn-container,
+  #movie-container {
+    flex-direction: column;
+  }
+  .btn,
+  .book-btn,
+  .movie-btn {
+    width: 80vw;
+    align-self: center;
+    margin-top: 2vh;
+  }
+
+  .character-btn {
+    display: inline-block;
+    border-radius: 0%;
+    width: 24vw;
+    height: 6vh;
+    line-height: 4vh;
+    overflow: hidden;
+    text-decoration: none;
+    margin: 3vh 3vh;
+    text-align: center;
+    transition: background-color 0.3s, color 0.3s, border 0.3s;
+    font-weight: bolder;
+    transform: scale(1);
+    color: white;
+    background-color: #ffd448;
+    border: 1vh solid #ffd448;
+  }
+
+  #book-info,
+  #movie-info {
+    font-size: 12px;
+    width: 90vw;
+  }
+
+  #book-info {
+    height: 70vh;
+  }
+
+  #movie-info {
+    height: 65vh;
+  }
+
+  #movie-info-text {
+    line-height: 500%;
+  }
+
+  #movie-info-text i,
+  #rt-score-logo {
+    margin: 0 2vh;
+  }
+
+  .btn-dark {
+    width: 50vw;
+    line-height: 2vh;
+  }
+
+  #book-title {
+    margin: 0;
+  }
+
+  #chapters {
+    margin: 0;
+  }
+}

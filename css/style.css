@@ -84,23 +84,10 @@ header {
   font-weight: bolder;
 }
 
-#random {
-  color: var(--dark-egg);
-  border: 1vh solid var(--dark-egg);
-  grid-area: random;
-}
-
 .category:link {
   color: white;
   background-color: var(--dark-egg);
   border: 1vh solid var(--dark-egg);
-}
-
-#random:hover {
-  color: white;
-  background-color: var(--dark-egg);
-  transform: scale(1.03);
-  transition: transform 0.1s;
 }
 
 .category:hover {
