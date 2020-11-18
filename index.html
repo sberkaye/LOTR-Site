@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Berkay Ergin" />
+    <meta
+      name="description"
+      content="Everything about Lord of the Rings & the Hobbit series."
+    />
+    <meta name="keywords" content="lotr, hobbit, gandalf, saruman, ring" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>One Site to Rule Them All</title>
+    <script
+      src="https://kit.fontawesome.com/c8dc144aa4.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/player.js"></script>
+  </head>
+
+  <body>
+    <div id="bg-wrapper">
+      <video loop id="bg-video">
+        <source src="img/bg/gandalf.mp4" type="video/mp4" />
+      </video>
+      <div id="gradient"></div>
+    </div>
+    <header class="animate__animated animate__fadeIn" id="header">
+      <h1 id="main-title">Everything about LotR & the Hobbit!</h1>
+      <div class="btn-container">
+        <a href="books.html" class="btn category books-link link">Books</a>
+        <a href="movies.html" class="btn category movies-link link">Movies</a>
+        <a href="characters.html" class="btn category characters-link link"
+          >Characters</a
+        >
+      </div>
+    </header>
+    <main>
+      <span id="ic-span">
+        <i class="fas fa-play" onclick="playMusic()" id="ic-music"></i>
+      </span>
+    </main>
+  </body>
+</html>

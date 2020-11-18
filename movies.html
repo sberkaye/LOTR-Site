@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Berkay Ergin" />
+    <meta
+      name="description"
+      content="Everything about Lord of the Rings & the Hobbit series."
+    />
+    <meta name="keywords" content="lotr, hobbit, gandalf, saruman, ring" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/category_style.css" />
+    <title>One Site to Rule Them All</title>
+    <script
+      src="https://kit.fontawesome.com/c8dc144aa4.js"
+      crossorigin="anonymous"
+    ></script>
+    <script type="application/json" src="data/bookSummaries.json"></script>
+    <script src="js/player.js"></script>
+    <script src="js/script.js" type="module"></script>
+    <script src="js/movies.js" type="module"></script>
+  </head>
+
+  <body>
+    <div id="bg-wrapper">
+      <video loop id="bg-video">
+        <source src="img/bg/gandalf.mp4" type="video/mp4" />
+      </video>
+      <div id="gradient"><div id="transition-gradient"></div></div>
+    </div>
+    <header>
+      <a href="index.html" id="btn-back"><i class="fas fa-angle-left"></i></a>
+      <input type="text" id="searchbar" name="search" placeholder="Search..." />
+    </header>
+    <main>
+      <div class="animate__animated animate__fadeIn" id="movie-container"></div>
+      <div id="dummy"></div>
+      <div id="movie-info"></div>
+      <div id="pagination">
+        <div id="pagination-buttons">
+          <a href="#" id="btn-first-page">
+            <i class="fas fa-fast-backward"></i>
+          </a>
+          <a href="#" id="btn-page-back"><i class="fas fa-arrow-left"></i></a>
+          <span id="page-nr"></span>
+          <a href="#" id="btn-page-next"><i class="fas fa-arrow-right"></i></a>
+          <a href="#" id="btn-last-page">
+            <i class="fas fa-fast-forward"></i>
+          </a>
+        </div>
+        <span id="span-play">
+          <i class="fas fa-play" onclick="playMusic()" id="ic-music"></i>
+        </span>
+      </div>
+    </main>
+  </body>
+</html>
